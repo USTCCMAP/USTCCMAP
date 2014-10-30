@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_backgroud"
+        android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/temp"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="3dp"
+        android:background="#DEB887"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <Button
+                android:id="@+id/btn_center"
+                android:layout_width="233dp"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+		        android:layout_toRightOf="@+id/textview01"
+		        android:textSize="20sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#00ff00"
+                android:background="#8B7B8B"
+                android:text="@string/pos_now" />
+
+            <TextView
+                android:id="@+id/textview01"
+		        android:layout_width="43dp"
+		        android:layout_height="43dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:background="#00BFFF"
+                android:text="@string/pos"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+		    <TextView
+		        android:id="@+id/textview02"
+		        android:layout_width="43dp"
+		        android:layout_height="43dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:background="#CD9B1D"
+		        android:layout_marginTop="3dp"
+		        android:text="@string/find"
+		        android:textSize="25sp" />
+
+		    <!-- 抢走焦点使进入界面，不显示搜狗 -->
+		    <LinearLayout 
+		        android:id="@+id/useless"
+  			    android:focusable="true" 
+  			    android:focusableInTouchMode="true" 
+  			    android:layout_width="0px" 
+  			    android:orientation="horizontal"
+   			    android:layout_height="0px"/> 
+		    <EditText
+		        android:id="@+id/search_text"
+		        android:focusable="true" 
+		        android:focusableInTouchMode="true"
+		        android:layout_width="153dp"
+		        android:layout_height="50dp"
+		        android:inputType="text"
+		        android:hint="@string/search_text"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="8dp"
+		        android:layout_toRightOf="@+id/textview02"
+		        android:layout_marginTop="2dp"
+		        android:ems="10"
+		        android:textSize="7pt" />
+
+		    <Button
+		        android:id="@+id/btn_search"
+		        android:layout_width="83dp"
+		        android:layout_height="50dp"
+		        android:layout_alignBaseline="@+id/search_text"
+		        android:layout_alignBottom="@+id/search_text"
+		        android:layout_toRightOf="@+id/search_text"
+		        android:textColor="#CD9B1D"
+		        android:textSize="18sp"
+		        android:text="@string/str_btn_search" />
+
+		</RelativeLayout>
+    </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+
+            <ExpandableListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/background_dark" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout        
+	        android:id="@+id/choose_center"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:background="@drawable/search_backgroud"
+	        android:visibility="gone"
+            >
+        
+            <EditText
+                android:id="@+id/choose_center2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/btn_OK"
+                android:ems="10"
+                android:text="@string/pos_now"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/btn_OK"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/choose_center2"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/choose_center2"
+                android:text="@string/str_submit"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/btn_mapchoose"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/choose_center2"
+                android:layout_marginTop="16dp"
+                android:background="#00000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="@string/str_btn_mapchoose" />
+
+            <Button
+                android:id="@+id/btn_city"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_mapchoose"
+                android:background="#00000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="@string/str_btn_city" />
+
+            <Button
+                android:id="@+id/btn_me"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_city"
+                android:background="#00000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="@string/pos_now" />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
