@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_MenuView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bubble_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="30dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <Button
+        android:id="@+id/pop_choosecenter"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="#e00000"
+        android:text="@string/set_center"
+         >
+    </Button>
+    
+        <Button
+        android:id="@+id/pop_choosefrom"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="#e00000"
+        android:text="@string/set_start"
+        android:visibility="gone" >
+    </Button>
+    
+            <Button
+        android:id="@+id/pop_chooseto"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="#e00000"
+        android:text="@string/set_des"
+        android:visibility="gone" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/pop_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_pop_search"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:background="#e00000"
+            android:text="@string/pop_search" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_pop_from"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:background="#FFFFFF"
+            android:text="@string/pop_start" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_pop_to"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:background="#FFFFFF"
+            android:text="@string/pop_des" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_pop_new"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:background="#FFFFFF"
+            android:text="@string/pop_store" >
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pop_clear"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:background="#FFFFFF"
+        android:text="@string/pop_clear"
+        android:layout_below="@+id/pop_menu"
+        android:visibility="gone" >
+    </Button>
+
+</RelativeLayout>

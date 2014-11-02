@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_about_us" >
+
+
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:textSize="35dp" />
+
+
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/help_title"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:ems="10" />
+    
+        <Button
+        android:id="@+id/btn_help_exit"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00BFFF"
+        android:layout_marginBottom="43dp"
+        android:layout_marginRight="47dp"
+        android:text="@string/help_back" />
+</RelativeLayout>
