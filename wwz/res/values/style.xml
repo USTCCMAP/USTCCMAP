@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+       <item name="android:windowBackground">@drawable/white</item>
+       <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:windowTitleSize">50dp</item>
+        <!--  <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item> -->
+    </style>
+</resources>

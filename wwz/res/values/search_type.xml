@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_type">
+        <item>银行</item>    		<!-- bank -->
+        <item>加油站</item>		<!-- gas_station -->
+        <item>医院</item>			<!-- hospital -->
+        <item>旅行社</item>		<!-- travel agency -->
+        <item>停车</item>			<!-- parking -->
+        <item>购物中心</item>		<!-- shopping mall -->
+        <item>学校</item>			<!-- school -->
+        <item>火车站</item>		<!-- train station -->
+    </string-array>
+</resources>

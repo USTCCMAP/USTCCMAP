@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- 
+    <string name="app_name">Cee map</string>
+     -->
+    <string name="app_name">Cc map</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Cee map</string>
+    <string name="start">出发点</string>
+    <string name="destination">目的地</string>
+    <string name="research">重新搜索</string>
+    <string name="tomap">显示地图</string>
+    <string name="tolist">显示列表</string>
+    <string name="navigation_title">导航图</string>
+    <string name="place">城市</string>
+    <string name="fromplace">中心地点</string>
+    <string name="search_type">搜索类型</string>
+    <string name="about_us_title">简介</string>
+    <string name="about_us_content">团队名称：WWWW"\n\n""   团队成员        王香港、王明亮、王申雨</string>  
+    <string name="for_more">点击获得更多信息</string>
+    <string name="ahead_page">上一页</string>
+    <string name="next_page">下一页</string>
+    
+    <string name="set_center">设为搜索中心</string>
+    <string name="set_start">设为出发点</string>
+    <string name="set_des">设为目的地</string>
+    <string name="pop_start">这里出发</string>
+    <string name="pop_des">到这里去</string>
+    <string name="pop_store">添加收藏</string>
+    <string name="pop_search">查找周边</string>
+    <string name="pop_clear">清空地图标记</string>
+    
+    <string name="pos">在</string>
+    <string name="pos_now">当前位置</string>
+    <string name="find">找</string>
+    <string name="search_text">餐厅、住宿等</string>
+    <string name="str_btn_search">查询</string>
+    <string name="str_submit">确定</string>
+    <string name="str_btn_mapchoose">地图上选点</string>
+    <string name="str_btn_city">指定城市搜索</string>
+    
+    <string name="str_message_find">查找</string>
+    <string name="str_message_back">返回</string>
+    
+    <string name="str_weather_mess_find">查找</string>
+    
+    <string name="str_store_name">        炫彩生活</string>
+    
+    <string name="insert_number">请输入对方号码：</string>
+    <string name="insert_sms">内容</string>
+    <string name="button_send">发    送</string>
+    <string name="send_info">发送成功</string>
+    
+ 	<string name="help_back">返  回</string>
+    
+ 	<string name="name">名称:</string>
+    <string name="address">地址:</string>
+    <string name="type">类型:</string>
+    <string name="comment">备注:</string>
+ 
+	<string name="submit">添加</string>
+    <string name="reset">重置</string>
+    <string name="cancle">取消</string>
+    <string name="delete">删除</string>
+    <string name="update">修改</string>
+ 	<string name="auto_add">选择类型</string>
+ 	<string name="spinner_prompt">选择类型</string>
+ 	<string-array name="spinner_type">
+        <item>餐饮</item>
+        <item>住宿</item>
+        <item>娱乐</item>
+        <item>购物</item>
+        <item>出行</item>
+        <item>文教</item>
+        <item>服务</item>、
+        <item>其它</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <com.baidu.mapapi.map.MapView
+    	android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+    	android:clickable="true" />
+
+    <TextView
+        android:id="@+id/flowing"
+        android:layout_width="95dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="16dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:text=""
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/whereAmI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/my_location"
+         />
+
+    <Button
+        android:id="@+id/btn_toList"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/tolist"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/List_head"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#8DEEEE"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/search_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/List_head" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="#eeeeee"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_toMap"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/tomap" />
+
+        <Button
+            android:id="@+id/btn_research"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/research" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/detail_head"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#8DEEEE"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/detail_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_head" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_toMap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/tomap" />
+
+        <Button
+            android:id="@+id/btn_toList2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/tolist" />
+    </RelativeLayout>
+
+</RelativeLayout>
