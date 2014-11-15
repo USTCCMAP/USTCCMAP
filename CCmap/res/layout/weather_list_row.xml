@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/day_of_week"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/image"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/day_of_week"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/temperature"
+        android:layout_marginRight="5dp"
+        android:gravity="center" />
+
+</RelativeLayout>

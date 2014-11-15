@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     >
+ 	<TextView  
+    	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content" 
+    	android:text="@string/insert_number"
+    	android:paddingLeft="10dip"
+    	android:paddingTop="10dip"
+    />
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+        <Button
+                android:id="@+id/find_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_margin="10dp"
+                android:text="@string/str_message_find" 
+                android:onClick="Onclick_check_num"/>
+
+    	<EditText
+    	    android:id="@+id/edittext_number"
+    	    android:layout_width="162dp"
+    	    android:layout_height="fill_parent"
+    	    android:inputType="text"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_margin="10dp"
+    	    android:layout_toLeftOf="@+id/find_phone_num"
+    	    android:ems="10" />
+
+	</RelativeLayout>
+	<TextView  
+    	android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+    	android:text="@string/insert_sms"
+    	android:paddingLeft="10dip"
+    />
+	<EditText
+    	android:id="@+id/edittext_content"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:inputType="textMultiLine"
+    	android:minLines="4"
+    	android:layout_margin="10dp"
+   	/>
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+        
+        <Button
+    		android:id="@+id/button_send"
+    		android:layout_width="90dip"
+    		android:layout_height="wrap_content"
+    		android:text="@string/button_send"
+    		android:layout_marginLeft="10dp"
+    		android:layout_centerHorizontal="true"
+   		/>       
+
+        <Button
+            android:id="@+id/button_send_back"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/button_send"
+            android:text="@string/str_message_back"
+            android:onClick="OnClick_back" />
+        
+    </RelativeLayout>
+	<!--  <Button
+    	android:id="@+id/button_send"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/button_send"
+    	android:layout_marginLeft="10dp"
+    />  -->             
+</LinearLayout>

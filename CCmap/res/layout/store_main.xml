@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/store_background"
+    android:orientation="vertical" >
+  
+  <LinearLayout  
+     android:id="@+id/gone_linear"  
+     android:layout_width="fill_parent"  
+     android:layout_height="40dp"        
+     android:visibility="gone"  
+     android:cacheColorHint="#50000000">  
+  
+	  <ImageView
+	    android:contentDescription="@string/app_name"
+	    android:id="@+id/list_imageview"   
+	    android:layout_width="wrap_content"  
+	    android:layout_height="30dip"   
+	    android:src="@drawable/store_small_icon" />  
+	 
+
+
+	  <EditText
+	      android:id="@+id/list_textview"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="50dip"
+	      android:inputType="text"
+	      android:textColorHint="#00000000"
+	       />
+  
+  </LinearLayout>  
+ 
+  <RelativeLayout 
+      android:layout_width="fill_parent"  
+      android:layout_height="fill_parent">  
+
+
+
+
+
+
+  	<ExpandableListView
+  	    android:id="@+id/listview"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="395dp"
+  	    android:layout_marginTop="55dp"
+  	    android:cacheColorHint="#00000000" />
+
+
+
+
+
+  	<TextView
+  	    android:id="@+id/editText1"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignParentTop="true"
+  	    android:ems="10"
+  	    android:text="@string/str_store_name"
+  	    android:textSize="40dp" 
+  	    >
+
+  	    <requestFocus />
+  	</TextView>
+  
+  </RelativeLayout>  
+</LinearLayout>  
+
